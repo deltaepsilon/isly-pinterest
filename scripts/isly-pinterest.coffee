@@ -1,3 +1,4 @@
+$ = window.jQuery
 class IslyPinterest
   constructor: (options) ->
     @permalinkClass = options.permalinkClass || '.isly-pinterest-permalink'
@@ -54,8 +55,7 @@ class IslyPinterest
     @window.unbind 'resize', @removePin
   getPinItLink: (image, entry) ->
     return 'http://pinterest.com/pin/create/button/?url=' +  encodeURIComponent(entry.permalink.attr('href')) + '&media=' + encodeURIComponent($(image).attr('src')) + '&description=' + encodeURIComponent(entry.description)
-$ = window.jQuery
-$(document).ready ->
+jQuery(document).ready ->
   new IslyPinterest
     permalinkClass: '.isly-pinterest-permalink'
     minHeight: 100,
