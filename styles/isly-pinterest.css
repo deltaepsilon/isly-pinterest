@@ -3,9 +3,9 @@
 	height: 40px;
 	width: 40px;
 	color: white;
-	background: rgba(0, 0, 0, .7);
+	background: transparent;
 	position: absolute;
-	background-image: url("../images/isly_pinterest.png");
+	background-image: url("/wp-content/plugins/isly-pinterest/images/isly_pinterest.png");
 	background-repeat: no-repeat;
 	background-position: 5px 5px;
 	border-radius: 4px;
