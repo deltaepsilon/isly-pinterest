@@ -2,7 +2,7 @@
 /*
 Plugin Name: ISLY Pinterest
 Plugin URI: http://christopheresplin.com/isly-pinterst
-Description: This little plugin uses nothing but JavaScript to add Pinterest Pin-It functionality to all of your images
+Description: This little plugin uses nothing but JavaScript to add Pinterest Pin-It functionality to all of your images.  Change your plugin settings via Settings -> Isly Pinterest
 Version: 0.1
 Author: Christopher Esplin
 Author URI: http://christopheresplin.com
