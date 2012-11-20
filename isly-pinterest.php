@@ -9,7 +9,7 @@ Author URI: http://christopheresplin.com
 License: GPL2
 */
 
-/*  Copyright YEAR  Christopher Esplin  (email : christopher.esplin@gmail.com)
+/*  Copyright 2012  Christopher Esplin  (email : christopher.esplin@gmail.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as
@@ -29,8 +29,7 @@ add_action('wp_head', 'islyPinterestInjection');
 function islyPinterestInjection() {
 	$alternateCSS = get_option('islyAlternateCSS');
 	echo "<script type='text/javascript' src='".plugins_url('isly-pinterest/scripts/isly-pinterest.js')."'></script>";
-//	echo "<script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>";
-	echo "<script>window.jQuery || document.write('<script src=\"".plugins_url('isly-pinterest/scripts/jquery-1.8.2.min.js')."\"><\/script>')</script>";
+	wp_enqueue_script('jquery');
 	if (strlen($alternateCSS)) {
 		echo "<style>".$alternateCSS."</style>";
 	} else {
