@@ -42,8 +42,10 @@ window.ISLY.IslyPinterest = class IslyPinterest
     if image.height() > @minHeight
       image.bind 'mouseenter', ->
         that.setPin(image, entry)
+        image.addClass 'pinterest-hover'
       image.bind 'mouseleave', ->
         that.removePin()
+        image.removeClass 'pinterest-hover'
   setPin: (image, entry) ->
     that = this
     pinItLink = @getPinItLink image, entry
